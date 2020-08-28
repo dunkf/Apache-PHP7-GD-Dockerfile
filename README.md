@@ -28,4 +28,5 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
            80:80
        volumes:
            - ./www:/var/www/html  //location of web root
-       //  - .apache::/etc/apache2  //config file(requires being copied over from container)`
+       //  - .apache:/etc/apache2  //config files(requires files copied from container)
+       //  - .php:/usr/local/etc/php //config files(requires files copied from container)
