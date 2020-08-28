@@ -18,14 +18,14 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 # Sample Docker-compose 
 
-`version: "2"
-
-services:
-  php-apache:
-    build:
-        context: ./php-apache   //location of Docker file
-    ports:
-        80:80
-    volumes:
-        - ./www:/var/www/html  //location of web root
-    //  - .apache::/etc/apache2  //config file(requires being copied over from container)`
+>version: "2"
+>
+>services:
+> php-apache:
+>   build:
+>       context: ./php-apache   //location of Docker file
+>   ports:
+>       80:80
+>   volumes:
+>       - ./www:/var/www/html  //location of web root
+>   //  - .apache::/etc/apache2  //config file(requires being copied over from container)`
