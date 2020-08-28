@@ -6,7 +6,7 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 1. Create folder named 'php-apache' and place docker file inside
 
-2. Run `<docker-compose build>`
+2. Run `docker-compose build`
 
 3. Run 'docker-compose up -d'
 
