@@ -8,17 +8,17 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 2. Run `docker-compose build`
 
-3. Run 'docker-compose up -d'
+3. Run `docker-compose up -d`
 
 4. Inside Container  
 
-5. Run 'apt-get install -y libpng-dev libjpeg62-turbo-dev apt-get install libwebp-dev'
+5. Run `apt-get install -y libpng-dev libjpeg62-turbo-dev apt-get install libwebp-dev`
 
-6. Run 'docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd'
+6. Run `docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd`
 
 # Sample Docker-compose 
 
-version: "2"
+`version: "2"
 
 services:
   php-apache:
@@ -28,4 +28,4 @@ services:
         80:80
     volumes:
         - ./www:/var/www/html  //location of web root
-    //  - .apache::/etc/apache2  //config file(requires being copied over from container)
+    //  - .apache::/etc/apache2  //config file(requires being copied over from container)`
