@@ -16,7 +16,7 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 6. Run `docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd`
 
-# Sample Docker-compose 
+# Sample docker-compose 
 
     version: "2"
     
