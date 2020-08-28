@@ -1,4 +1,4 @@
-# APACHE PHP7 with GD installed Dockerfile 
+# Apache PHP7 with GD Dockerfile 
 A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 
