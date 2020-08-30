@@ -10,11 +10,6 @@ A Dockerfile / Docker config for php:7.0-apache, GD (JPEG, PNG).
 
 3. Run `docker-compose up -d`
 
-4. Inside Container  
-
-5. Run `apt-get install -y libpng-dev libjpeg62-turbo-dev apt-get install libwebp-dev`
-
-6. Run `docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd`
 
 # Sample docker-compose 
 
