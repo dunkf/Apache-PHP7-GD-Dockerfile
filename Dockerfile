@@ -26,6 +26,6 @@ RUN apt-get update \
 
 WORKDIR /var/www
 
-// run in container after build
-// apt-get install -y libpng-dev libjpeg62-turbo-dev apt-get install libwebp-dev
-// docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd
+RUN apt-get install -y libpng-dev libjpeg62-turbo-dev libwebp-dev
+RUN docker-php-ext-configure gd --with-jpeg-dir=/usr/include/ --with-vpx-dir=/usr/include/ --with-webp-dir=/usr/include/ && docker-php-ext-install gd
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
